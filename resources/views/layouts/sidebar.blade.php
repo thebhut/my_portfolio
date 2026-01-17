@@ -1,4 +1,4 @@
-<div class="w-64 bg-slate-800 text-white flex flex-col h-screen fixed left-0 top-0 border-r border-slate-700 z-50">
+<div id="sidebar" class="w-64 bg-slate-800 text-white flex flex-col h-screen fixed left-0 top-0 border-r border-slate-700 z-50 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out">
     <div class="h-16 flex items-center px-6 border-b border-slate-700">
         <h1 class="text-xl font-bold text-cyan-500">Admin Panel</h1>
     </div>

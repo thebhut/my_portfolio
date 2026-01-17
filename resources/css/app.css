@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Manual overrides for responsive sidebar */
+.-translate-x-full {
+    transform: translateX(-100%) !important;
+}
+
+.transition-transform {
+    transition-property: transform !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 300ms !important;
+}
+
+.transition-all {
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 300ms !important;
+}
+
+.duration-300 {
+    transition-duration: 300ms !important;
+}
+
+@media (min-width: 1024px) {
+    .lg\:translate-x-0 {
+        transform: translateX(0) !important;
+    }
+
+    .lg\:ml-64 {
+        margin-left: 16rem !important;
+    }
+
+    .lg\:hidden {
+        display: none !important;
+    }
+}

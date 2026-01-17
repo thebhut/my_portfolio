@@ -1,9 +1,9 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-3xl text-white leading-tight">
+        <h2 class="font-semibold text-2xl sm:text-3xl text-white leading-tight">
             {{ __('Dashboard') }}
         </h2>
-        <p class="text-slate-400 mt-2">Welcome back, {{ Auth::user()->name }}!</p>
+        <p class="text-slate-400 mt-2 text-sm sm:text-base">Welcome back, {{ Auth::user()->name }}!</p>
     </x-slot>
 
     <div class="py-6">
@@ -39,14 +39,14 @@
             <div class="bg-slate-800 overflow-hidden shadow-sm sm:rounded-lg border border-slate-700">
                 <div class="p-6">
                     <h3 class="text-lg font-bold text-white mb-4">Quick Actions</h3>
-                    <div class="flex gap-4">
-                        <a href="{{ route('admin.projects.create') }}" class="px-4 py-2 bg-slate-700 text-white rounded hover:bg-slate-600 transition-colors border border-slate-600">
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                        <a href="{{ route('admin.projects.create') }}" class="px-4 py-2 bg-slate-700 text-white rounded hover:bg-slate-600 transition-colors border border-slate-600 text-center">
                             Add Project
                         </a>
-                        <a href="{{ route('admin.skills.index') }}" class="px-4 py-2 bg-slate-700 text-white rounded hover:bg-slate-600 transition-colors border border-slate-600">
+                        <a href="{{ route('admin.skills.index') }}" class="px-4 py-2 bg-slate-700 text-white rounded hover:bg-slate-600 transition-colors border border-slate-600 text-center">
                             Manage Skills
                         </a>
-                         <a href="{{ route('admin.contacts.index') }}" class="px-4 py-2 bg-slate-700 text-white rounded hover:bg-slate-600 transition-colors border border-slate-600">
+                         <a href="{{ route('admin.contacts.index') }}" class="px-4 py-2 bg-slate-700 text-white rounded hover:bg-slate-600 transition-colors border border-slate-600 text-center">
                             Check Messages
                         </a>
                     </div>

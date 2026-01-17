@@ -17,5 +17,21 @@ export default {
         },
     },
 
+    safelist: [
+        'lg:ml-64',
+        '-translate-x-full',
+        'translate-x-0',
+        'z-40',
+        'z-50',
+        'bg-opacity-50',
+        'transition-all',
+        'duration-300',
+        'fixed',
+        'inset-0',
+        'w-64',
+        'lg:hidden',
+        'transform'
+    ],
+
     plugins: [forms],
 };
